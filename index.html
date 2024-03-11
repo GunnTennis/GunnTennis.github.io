@@ -204,23 +204,26 @@ body {font-family: "Lato", sans-serif}
             </form>
           </div>
         </div>
-      </div>
+      </div> 
 </footer>
 
 <script>
 // Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
+var currentIndex = 0;
+var newIndex = 0;
 carousel();
 
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
+  while (newIndex != currentIndex) {
+    newIndex = Math.floor(Math.random() * x.length);
+  }
+  currentIndex = newIndex;
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
+  x[currentIndex-1].style.display = "block";  
   setTimeout(carousel, 4000);    
 }
 
