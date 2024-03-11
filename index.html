@@ -7,9 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon"
-      type="image/png"
-      href="./tennisBall.png">
+<link rel="icon" type="image/png" href="./tennisBall.png">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -36,18 +34,18 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block customGreen w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="shrinkNav()">Lessons</a>
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="shrinkNav()">Lessons</a>
   <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="shrinkNav()">Gunn Boys Tennis</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="shrinkNav()">Gunn Girls Tennis</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="shrinkNav()">Summer Camp Registration</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="shrinkNav()">About</a>
-  </div>
+</div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
-  <!-- Girls Varsity, Girls JV, Boys Varsity, Boys JV, 2 pictures each--> 
+  <!-- Girls Varsity, Girls JV, Boys Varsity, Boys JV, 2 pictures each -->
   <div class="mySlides w3-display-container w3-center">
     <img src="./girlsVarsity1.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
@@ -222,7 +220,6 @@ body {font-family: "Lato", sans-serif}
 </footer>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
 var currentIndex = 0;
 var newIndex = 0;
 carousel();
@@ -237,7 +234,7 @@ function carousel() {
     x[i].style.display = "none";  
   }
   x[currentIndex].style.display = "block";  
-  setTimeout(carousel, 4000);
+  setTimeout(carousel, 5000);
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
