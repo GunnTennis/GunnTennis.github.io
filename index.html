@@ -95,11 +95,13 @@ body {font-family: "Lato", sans-serif}
       <p><b>Boys strategizing their plays</b></p>    
     </div>
   </div>
-  <div class="w3-blue" id="tour" style="position:fixed; bottom: 0px; width:calc(20% + 200px); opacity:75%">
+  <div class="w3-blue" id="popup" style="position:fixed; bottom: 0px; width:calc(20% + 200px); opacity:75%">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">2024 TENNIS CAMP</h2>
-      <h3 class="w3-wide w3-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfOzUqXvzQ8v0BhIGLA9D3RXyZV7qHVjE_xwceYJ2EblTR2Mg/viewform">Register Here</a></h3>
+      <h3 class="w3-wide w3-center"><a href="https://forms.gle/t2Fo2L75x3j67p3H7"><button class="w3-button w3-black w3-padding-16 w3-section" style="margin:0 auto;">Register Here</button></a></h3>
+      <h1 class="w3-opacity" style="position: fixed; bottom:240px; right: calc(20%+160px); transform:rotate(45deg)", onclick="hidePopup()">+</h1>
     </div>
+    
   </div>
       
 
@@ -263,6 +265,10 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+function hidePopup() {
+  document.getElementById('popup').style.display = "none";
 }
 </script>
 
