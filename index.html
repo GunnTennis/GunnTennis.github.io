@@ -229,17 +229,17 @@ var newIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
   var x = document.getElementsByClassName("mySlides");
-  while (newIndex != currentIndex) {
+  while (newIndex == currentIndex) {
     newIndex = Math.floor(Math.random() * x.length);
   }
   currentIndex = newIndex;
+  console.log(currentIndex);
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  x[currentIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  x[currentIndex].style.display = "block";  
+  setTimeout(carousel, 4000);
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
