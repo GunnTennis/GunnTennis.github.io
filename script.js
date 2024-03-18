@@ -1,19 +1,20 @@
 // Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+var currentIndex = 0;
+var newIndex = 0;
 
 function carousel() {
-    var i;
     var x = document.getElementsByClassName("slide");
-    console.log(x);
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    while (newIndex == currentIndex) {
+      newIndex = Math.floor(Math.random() * x.length);
     }
-    myIndex++;
-    if (myIndex > x.length) { myIndex = 1 }
-    x[myIndex - 1].style.display = "block";
+    currentIndex = newIndex;
+    console.log(currentIndex);
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[currentIndex].style.display = "block";  
     setTimeout(carousel, 4000);
-}
+  }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function shrinkNav() {
@@ -31,4 +32,8 @@ window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+function hidePopup() {
+  document.getElementById('popup').style.display = "none";
 }
