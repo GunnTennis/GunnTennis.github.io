@@ -35,53 +35,53 @@
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
   <!-- Automatic Slideshow Images -->
   <!-- Girls Varsity, Girls JV, Boys Varsity, Boys JV, 2 pictures each -->
-  <div class="mySlides w3-display-container w3-center">
+  <div class="slide w3-display-container w3-center">
     <img src="./images/girlsVarsity1.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Girls Varsity</h3>
-      <p><b>Celebrating our win against Wilcox</b></p>   
+      <p>Celebrating our win against Wilcox</p>   
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="slide w3-display-container w3-center">
     <img src="./images/girlsVarsity2.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Girls Varsity</h3>
-      <p><b>Came on top, 5-2 after a long battle against Saratoga !!</b></p>   
+      <p>Came on top, 5-2 after a long battle against Saratoga !!</p>   
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="slide w3-display-container w3-center">
     <img src="./images/girlsJV1.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Girls Junior Varsity</h3>
-      <p><b>Lively JV faces and coach Tony</b></p>    
+      <p>Lively JV faces and coach Tony</p>    
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="slide w3-display-container w3-center">
     <img src="./images/girlsJV2.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Girls Junior Varsity</h3>
-      <p><b>Big smiles after 10-6 super-tiebreaker!</b></p>    
+      <p>Big smiles after 10-6 super-tiebreaker!</p>    
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="slide w3-display-container w3-center">
     <img src="./images/boysVarsity1.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Boys Varsity</h3>
-      <p><b>Ready for the new season!</b></p>    
+      <p>Ready for the new season!</p>    
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="slide w3-display-container w3-center">
     <img src="./images/boysVarsity2.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Boys Varsity</h3>
-      <p><b> Cheers that were echoed but Titan gym</b></p>    
+      <p> Cheers that were echoed but Titan gym</p>    
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
+  <div class="slide w3-display-container w3-center">
     <img src="./images/boysJV1.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Boys Junior Varsity</h3>
-      <p><b>Boys strategizing their plays</b></p>    
+      <p>Boys strategizing their plays</p>    
     </div>
   </div>
   <div class="customYellow" id="popup" style="position:fixed; bottom: 0px; width:calc(20% + 200px); opacity:75%">
@@ -139,7 +139,7 @@
         <div class="w3-third w3-margin-bottom">
           <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p><b>New York</b></p>
+            <p>New York</b></p>
             <p class="w3-opacity"></p>
             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
             <button class="w3-button customGreen w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
@@ -148,7 +148,7 @@
         <div class="w3-third w3-margin-bottom">
           <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
+            <p>Paris</b></p>
             <p class="w3-opacity">Sat 28 Nov 2016</p>
             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
             <button class="w3-button customGreen w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
@@ -157,7 +157,7 @@
         <div class="w3-third w3-margin-bottom">
           <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
+            <p>San Francisco</b></p>
             <p class="w3-opacity">Sun 29 Nov 2016</p>
             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
             <button class="w3-button customGreen w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
@@ -226,7 +226,7 @@ var newIndex = 0;
 carousel();
 
 function carousel() {
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("slide");
   while (newIndex == currentIndex) {
     newIndex = Math.floor(Math.random() * x.length);
   }

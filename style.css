@@ -17,3 +17,13 @@ body {
 .customYellow {
     background-color: #C0FE38;
 }
+
+.slide > div > h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.slide > div > p {
+    font-size: 15px;
+    font-weight: thin;
+}
