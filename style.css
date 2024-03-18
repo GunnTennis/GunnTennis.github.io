@@ -1,3 +1,15 @@
-document {
+document {}
 
+body {
+    font-family: Georgia, Cambria, Cochin, Times, 'Times New Roman', serif
+}
+
+.customGreen {
+    background-color: #214C1C !important;
+    color: #ffffff !important;
+}
+
+.customBlue {
+    background-color: #06466C !important;
+    color: #ffffff !important;
 }
