@@ -33,7 +33,7 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
-
+    
 function hidePopup() {
   document.getElementById('popup').style.display = "none";
 }
