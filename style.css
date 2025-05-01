@@ -2,8 +2,13 @@ p {
     font-size: 18px;
 }
 
+<<<<<<< Updated upstream
 h1 {
     font-size: 36px;
+=======
+h1{
+    font-size: 44px;
+>>>>>>> Stashed changes
 }
 
 body {
